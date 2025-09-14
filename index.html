@@ -136,7 +136,72 @@
       color: var(--color-acento);
     }
 
+    /* --- NUEVOS ESTILOS --- */
+
+    /* Sobre mí: foto y texto alineados */
+    #sobremi {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 4rem 2rem;
+    }
+
+    #sobremi .foto-perfil {
+      width: 250px;
+      height: auto;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    #sobremi div {
+      max-width: 600px;
+    }
+
+    #sobremi p {
+      text-align: left;
+      color: var(--color-gris);
+    }
+
+    /* Servicios: tarjetas en fila */
+    .services {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--color-secundario);
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+    }
+
     /* Responsive */
+    @media (max-width: 768px) {
+      #sobremi {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #sobremi p {
+        text-align: center;
+      }
+    }
+
     @media (max-width: 600px) {
       nav a {
         display: block;
@@ -149,8 +214,6 @@
 
   <!-- Header -->
   <header>
-    <!-- fernanda.PNG -->
-    <!-- <img src="fernanda.PNG" alt="Fernanda Gentile" style="width:150px;border-radius:50%;margin-bottom:1rem;"> -->
     <h1>Mentorías Exitosas</h1>
     <p>Fernanda Gentile</p>
     <p>Cursos, Mentorías y Capacitaciones para Emprendedores, Comerciantes y Pymes</p>
@@ -171,15 +234,15 @@
 
   <!-- Sobre mí -->
   <section id="sobremi">
-  <h2>Sobre mí</h2>
-  <img src="ferfotoweb.jpeg" alt="Fernanda Gentile" class="foto-perfil">
-  <p>Soy Fernanda Gentile, Mentora y Especialista en Ventas con propósito, con amplia experiencia acompañando a emprendedores, comerciantes y equipos de trabajo. Mi enfoque combina estrategias de ventas tradicionales con herramientas innovadoras, incluyendo Inteligencia Artificial, para que cada interacción con tus clientes sea más efectiva y tus resultados crezcan de manera tangible.</p>
-    <p>Creo firmemente que el éxito de un negocio comienza en la mentalidad del vendedor y en la conexión auténtica con sus clientes. Mi propósito es acompañarte a transformar tus resultados a través de herramientas simples, prácticas y poderosas, adaptadas a las necesidades reales de tu negocio.</p>
+    <img src="ferfotoweb.jpeg" alt="Fernanda Gentile" class="foto-perfil">
+    <div>
+      <p>Soy Fernanda Gentile, Mentora y Especialista en Ventas con propósito, con amplia experiencia acompañando a emprendedores, comerciantes y equipos de trabajo. Mi enfoque combina estrategias de ventas tradicionales con herramientas innovadoras, incluyendo Inteligencia Artificial, para que cada interacción con tus clientes sea más efectiva y tus resultados crezcan de manera tangible.</p>
+      <p>Creo firmemente que el éxito de un negocio comienza en la mentalidad del vendedor y en la conexión auténtica con sus clientes. Mi propósito es acompañarte a transformar tus resultados a través de herramientas simples, prácticas y poderosas, adaptadas a las necesidades reales de tu negocio.</p>
+    </div>
   </section>
 
-
   <!-- Servicios -->
-   <section id="servicios">
+  <section id="servicios">
     <h2>Mis Servicios</h2>
     <div class="services">
       <div class="card">
@@ -208,7 +271,7 @@
   <section id="contacto">
     <h2>Contacto</h2>
     <p>¿Querés llevar tu negocio al siguiente nivel? ¡Hablemos por WhatsApp!</p>
-    <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Quiero mi mentoria</a>
+    <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Quiero mi mentoría</a>
     <p>También podés encontrarme en redes sociales:</p>
     <div class="social">
       <a href="https://www.instagram.com/fernandagentilementorias" target="_blank"><i class="fab fa-instagram"></i> @fernandagentilementorias</a>
