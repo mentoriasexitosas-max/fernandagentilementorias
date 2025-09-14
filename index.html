@@ -4,49 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentorías Exitosas - Fernanda Gentile</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
   <style>
-    /* Paleta elegante */
+    /* Paleta elegante y femenina */
     :root {
-      --color-fondo: #1a1a1a;
-      --color-texto: #ffffff;
-      --color-acento: #ff7f50;
-      --color-secundario: #f0e68c;
-      --color-boton-texto: #1a1a1a;
+      --color-fondo: #fffaf1;
+      --color-texto: #222;
+      --color-acento: #d4af37;   /* dorado */
+      --color-secundario: #d8c3a4; /* rosa clarito */
+      --color-gris: #555;
     }
 
     body {
-      font-family: 'Playfair Display', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       background-color: var(--color-fondo);
       color: var(--color-texto);
+      line-height: 1.6;
     }
 
     header {
-      background-color: var(--color-fondo);
-      color: var(--color-acento);
-      padding: 2rem;
+      background: var(--color-secundario);
       text-align: center;
+      padding: 4rem 2rem;
     }
 
     header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
       margin: 0;
-      font-weight: 700;
-      font-size: 2.5rem;
-      color: var(--color-acento);
+      color: var(--color-texto);
     }
 
     header p {
+      margin-top: 0.8rem;
       font-size: 1.2rem;
-      margin-top: 0.5rem;
-      color: var(--color-secundario);
+      color: var(--color-gris);
     }
 
     nav {
-      background: var(--color-acento);
-      padding: 1rem;
       text-align: center;
+      margin-top: 1.5rem;
     }
 
     nav a {
@@ -54,29 +58,41 @@
       text-decoration: none;
       color: var(--color-texto);
       font-weight: 600;
-      transition: opacity 0.3s ease;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      opacity: 0.8;
+      color: var(--color-acento);
     }
 
     section {
-      padding: 3rem 2rem;
+      padding: 4rem 2rem;
       max-width: 900px;
       margin: auto;
     }
 
     section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      text-align: center;
       color: var(--color-texto);
-      margin-bottom: 1rem;
-      border-left: 5px solid var(--color-acento);
-      padding-left: 10px;
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--color-acento);
+      margin: 0.6rem auto 0;
+      border-radius: 2px;
     }
 
     p, li {
-      line-height: 1.6;
-      font-size: 1rem;
+      font-size: 1.05rem;
+      color: var(--color-gris);
     }
 
     ul li {
@@ -86,36 +102,33 @@
     .btn-whatsapp {
       display: inline-block;
       background-color: var(--color-acento);
-      color: var(--color-boton-texto);
-      padding: 14px 25px;
-      border-radius: 50px;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 40px;
       text-decoration: none;
       font-size: 1.1rem;
-      font-weight: bold;
+      font-weight: 600;
       transition: all 0.3s ease;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
 
     .btn-whatsapp:hover {
-      background-color: var(--color-texto);
-      color: var(--color-acento);
+      background-color: #b9972e;
     }
 
     footer {
-      background: var(--color-fondo);
-      color: var(--color-secundario);
+      background: #111;
+      color: #fff;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem;
       margin-top: 2rem;
       font-size: 0.9rem;
     }
 
-    /* Redes sociales */
     .social a {
-      margin-right: 10px;
+      margin: 0 10px;
       text-decoration: none;
-      color: var(--color-secundario);
-      font-weight: bold;
+      color: var(--color-gris);
       transition: color 0.3s ease;
     }
 
@@ -134,51 +147,68 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header>
+    <!-- fernanda.PNG -->
+    <!-- <img src="fernanda.PNG" alt="Fernanda Gentile" style="width:150px;border-radius:50%;margin-bottom:1rem;"> -->
     <h1>Mentorías Exitosas</h1>
     <p>Fernanda Gentile</p>
     <p>Cursos, Mentorías y Capacitaciones para Emprendedores, Comerciantes y Pymes</p>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobremi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#sobremi">Sobre mí</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#testimonios">Testimonios</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
+  <!-- Inicio -->
   <section id="inicio">
     <h2>Bienvenid@</h2>
     <p>Mi misión es ayudarte a potenciar tus ventas y tu negocio con herramientas prácticas, efectivas y fáciles de aplicar. Aquí encontrarás mentorías, cursos y capacitaciones diseñadas especialmente para emprendedores, comerciantes y pymes que desean crecer de manera sostenible.</p>
   </section>
 
+  <!-- Sobre mí -->
   <section id="sobremi">
-    <h2>Sobre mí</h2>
-    <p>Soy Fernanda Gentile, Mentora y Especialista en Ventas con propósito, con amplia experiencia acompañando a emprendedores, comerciantes y equipos de trabajo. Mi enfoque combina estrategias de ventas tradicionales con herramientas innovadoras, incluyendo Inteligencia Artificial, para que cada interacción con tus clientes sea más efectiva y tus resultados crezcan de manera tangible.</p>
+  <h2>Sobre mí</h2>
+  <img src="ferfotoweb.JPEG" alt="Fernanda Gentile" class="foto-perfil">
+  <p>Soy Fernanda Gentile, Mentora y Especialista en Ventas con propósito, con amplia experiencia acompañando a emprendedores, comerciantes y equipos de trabajo. Mi enfoque combina estrategias de ventas tradicionales con herramientas innovadoras, incluyendo Inteligencia Artificial, para que cada interacción con tus clientes sea más efectiva y tus resultados crezcan de manera tangible.</p>
     <p>Creo firmemente que el éxito de un negocio comienza en la mentalidad del vendedor y en la conexión auténtica con sus clientes. Mi propósito es acompañarte a transformar tus resultados a través de herramientas simples, prácticas y poderosas, adaptadas a las necesidades reales de tu negocio.</p>
   </section>
 
-  <section id="servicios">
-    <h2>Servicios y Mentorías</h2>
-    <ul>
-      <li><strong>Mentorías personalizadas:</strong> Acompañamiento sesiones 1:1 para trabajar tus objetivos de ventas.</li>
-      <li><strong>Cursos online:</strong> Capacitaciones prácticas sobre ventas, Inteligencia Artificial aplicada y otras herramientas para emprendedores.</li>
-      <li><strong>Capacitaciones para equipos:</strong> Entrenamientos grupales para emprendedores, comerciantes y pymes.</li>
-    </ul>
-    <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank">Escríbeme por WhatsApp</a>
+
+  <!-- Servicios -->
+   <section id="servicios">
+    <h2>Mis Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Mentorías 1:1</h3>
+        <p>Acompañamiento personalizado para que transformes tu negocio paso a paso.</p>
+      </div>
+      <div class="card">
+        <h3>Cursos Online</h3>
+        <p>Capacitaciones prácticas en ventas, comunicación y uso de IA para tu emprendimiento.</p>
+      </div>
+      <div class="card">
+        <h3>Capacitaciones para Pymes</h3>
+        <p>Programas diseñados para equipos de venta y atención al cliente.</p>
+      </div>
+    </div>
   </section>
 
+  <!-- Testimonios -->
   <section id="testimonios">
     <h2>Testimonios</h2>
     <p>"Las mentorías con Fernanda me ayudaron a ordenar mi negocio y cerrar más ventas. ¡La recomiendo 100%!" – Cliente satisfecho</p>
     <p>"Gracias a sus capacitaciones, mi equipo de ventas logró mejorar la atención al cliente y aumentar los ingresos." – Dueño de Pyme</p>
   </section>
 
+  <!-- Contacto -->
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>¿Querés llevar tu negocio al siguiente nivel? ¡Hablemos!</p>
-    <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank">Contactar por WhatsApp</a>
+    <p>¿Querés llevar tu negocio al siguiente nivel? ¡Hablemos por WhatsApp!</p>
+    <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Quiero mi mentoria</a>
     <p>También podés encontrarme en redes sociales:</p>
     <div class="social">
       <a href="https://www.instagram.com/fernandagentilementorias" target="_blank"><i class="fab fa-instagram"></i> @fernandagentilementorias</a>
@@ -186,6 +216,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Mentorías Exitosas - Fernanda Gentile | Todos los derechos reservados</p>
   </footer>
