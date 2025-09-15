@@ -99,6 +99,24 @@
       margin-bottom: 0.7rem;
     }
 
+    /* Botones */
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: var(--color-acento); /* dorado */
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background-color: #b68d2d; /* dorado más oscuro */
+    }
+
     .btn-whatsapp {
       display: inline-block;
       background-color: var(--color-acento);
@@ -135,8 +153,6 @@
     .social a:hover {
       color: var(--color-acento);
     }
-
-    /* --- NUEVOS ESTILOS --- */
 
     /* Sobre mí: foto y texto alineados */
     #sobremi {
@@ -221,6 +237,7 @@
       <a href="#inicio">Inicio</a>
       <a href="#sobremi">Sobre mí</a>
       <a href="#servicios">Servicios</a>
+      <a href="#mentoria1a1">Mentorías 1:1</a>
       <a href="#testimonios">Testimonios</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -246,37 +263,441 @@
   <div style="position: relative; width: 100%; max-width: 800px; height: 0; padding-bottom: 56.25%; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin: 0 auto;">
     <iframe 
       src="https://www.youtube.com/embed/97QOgJJLfBM?rel=0&showinfo=0&autoplay=1&mute=1&loop=1&playlist=97QOgJJLfBM" 
-      style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; transform: translate(-50%, -50%); object-fit: cover;" 
+      style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; transform: translate(-50%, -50%);" 
       frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
   </div>
 </section>
 
-  <!-- Servicios -->
-  <section id="servicios">
-    <h2>Mis Servicios</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Mentorías 1:1</h3>
-        <p>Acompañamiento personalizado para que transformes tu negocio paso a paso.</p>
-      </div>
-      <div class="card">
-        <h3>Cursos Online</h3>
-        <p>Capacitaciones prácticas en ventas, comunicación y uso de IA para tu emprendimiento.</p>
-      </div>
-      <div class="card">
-        <h3>Capacitaciones para Pymes</h3>
-        <p>Programas diseñados para equipos de venta y atención al cliente.</p>
-      </div>
+<!-- Servicios -->
+<section id="servicios">
+  <h2>Mis Servicios</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Mentorías 1:1</h3>
+      <p>Acompañamiento personalizado para que transformes tu negocio paso a paso.</p>
+      <a href="#mentoria1a1" class="btn">Conocer más</a>
     </div>
-  </section>
+    <div class="card">
+  <h3>Cursos Presenciales y Online</h3>
+  <p>Capacitaciones prácticas en ventas, comunicación y uso de IA para tu emprendimiento.</p>
+  <a href="#cursos" class="btn">Conocer más</a>
+</div>
 
-  <!-- Testimonios -->
-  <section id="testimonios">
-    <h2>Testimonios</h2>
-    <p>"Las mentorías con Fernanda me ayudaron a ordenar mi negocio y cerrar más ventas. ¡La recomiendo 100%!" – Cliente satisfecho</p>
-    <p>"Gracias a sus capacitaciones, mi equipo de ventas logró mejorar la atención al cliente y aumentar los ingresos." – Dueño de Pyme</p>
-  </section>
+    <div class="card">
+  <h3>Capacitaciones Corporativas</h3>
+  <p>Programas diseñados para equipos de venta y atención al cliente.</p>
+  <a href="#capacitaciones-corporativas" class="btn">Conocer más</a>
+</div>
+
+  </div>
+</section>
+
+<!-- Mentorías 1 a 1 -->
+<section id="mentoria1a1">
+  <style>
+    #mentoria1a1 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #mentoria1a1 h2 {
+      margin-bottom: 20px;
+    }
+
+    .mentoria-texto {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .mentoria-texto ul {
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    .mentoria-texto li {
+      margin-bottom: 8px;
+    }
+
+    .mentoria-foto {
+      max-width: 600px;   /* ancho máximo de la imagen */
+      width: 100%;        /* se adapta al contenedor */
+      margin: 25px auto 0; /* separa de arriba y centra */
+      display: block;     /* para que margin auto funcione */
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .btn-whatsapp {
+      display: inline-block;
+      background-color: #d4af37; /* dorado */
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #b8962f; /* dorado más oscuro */
+    }
+  </style>
+
+  <h2>🌟 Sesiones 1 a 1: tu proceso, tu crecimiento</h2>
+
+  <div class="mentoria-texto">
+    <p>¿Sentís que tu emprendimiento podría crecer más, pero no sabés por dónde empezar?<br>
+    ¿Te gustaría vender con más seguridad, claridad y autenticidad, sin sentir que estás “forzando” a nadie?</p>
+
+    <p>Las sesiones de coaching 1 a 1 son un espacio diseñado para vos y tu proyecto. Mi objetivo es acompañarte a que te conectes con tu propósito, fortalezcas tu mentalidad y descubras estrategias prácticas que te permitan comunicar y vender con confianza.</p>
+
+    <p>No se trata solo de mejorar tus ventas: se trata de crecer como persona y como emprendedor, porque cuando vos evolucionás, tu negocio también lo hace.</p>
+
+    <ul>
+      <li>✨ Clarificar tus objetivos y ordenarlos en un plan realista.</li>
+      <li>✨ Transformar la manera en la que presentás tus propuestas y servicios.</li>
+      <li>✨ Usar las palabras correctas para transmitir valor y generar confianza.</li>
+      <li>✨ Incorporar herramientas actuales (como la inteligencia artificial y recursos de comunicación) para ahorrar tiempo y ser más creativo.</li>
+    </ul>
+
+    <p>Cada proceso es único, porque está pensado para tus desafíos y tus sueños. Mi compromiso es darte un espacio seguro, humano y práctico, donde puedas encontrar las respuestas y la motivación para llevar tu emprendimiento al siguiente nivel.</p>
+
+    <p>💬 Si sentís que este es tu momento, te invito a escribirme y charlamos sobre cómo puedo acompañarte en este camino.</p>
+
+    <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i> Quiero mi sesión 1 a 1
+    </a>
+  </div>
+
+  <img src="mentoria1a1.png" alt="Sesión de mentoría 1 a 1" class="mentoria-foto">
+</section>
+
+<!-- Sección Cursos Presenciales y Online -->
+<section id="cursos">
+  <h2>Cursos Presenciales y Online</h2>
+  <div class="services">
+    <div class="card">
+      <h3>IA y Ventas para Emprendedores</h3>
+      <p>Vendé con inteligencia: usá la IA para ahorrar tiempo, destacar tu propuesta y cerrar más.</p>
+      <a href="#curso-ia-ventas" class="btn">Quiero aprender más</a>
+    </div>
+    <div class="card">
+      <h3>Ventas con Propósito</h3>
+      <p>¡No envíes solo un presupuesto: VENDE!</p>
+      <a href="#curso-ventas-proposito" class="btn">Quiero aprender más</a>
+    </div>
+    <div class="card">
+      <h3>Oratoria y Persuasión</h3>
+      <p>Aprender a hablar para vender con confianza y claridad.</p>
+      <a href="#curso-oratoria" class="btn">Quiero aprender más</a>
+    </div>
+    <div class="card">
+      <h3>Storytelling</h3>
+      <p>Cómo contar la historia de tu negocio y conectar con tus clientes.</p>
+      <a href="#curso-storytelling" class="btn">Quiero aprender más</a>
+    </div>
+    <div class="card">
+      <h3>Buenos Modales</h3>
+      <p>Captar y retener clientes mediante etiqueta y comunicación efectiva.</p>
+      <a href="#curso-buenos-modales" class="btn">Quiero aprender más</a>
+    </div>
+    <div class="card">
+      <h3>Canva</h3>
+      <p>Diseño para presentaciones y publicaciones en redes de manera simple.</p>
+      <a href="#curso-canva" class="btn">Quiero aprender más</a>
+    </div>
+    <div class="card">
+      <h3>Plan de Negocio Esencial</h3>
+      <p>Ordená tus cuentas, proyectá metas y hacé que tu negocio funcione.</p>
+      <a href="#curso-plan-negocio" class="btn">Quiero aprender más</a>
+    </div>
+    <div class="card">
+      <h3>IA a tu Favor para tu Vida Diaria</h3>
+      <p>Simplificá tu vida personal y laboral usando inteligencia artificial.</p>
+      <a href="#curso-ia-vida" class="btn">Quiero aprender más</a>
+    </div>
+    <div class="card">
+      <h3>Edición de Fotografías Nanobanana</h3>
+      <p>Aprendé técnicas de edición de imágenes para mejorar tus contenidos visuales.</p>
+      <a href="#curso-nanobanana" class="btn">Quiero aprender más</a>
+    </div>
+  </div>
+</section>
+
+<!-- Secciones individuales de los cursos -->
+<section id="curso-ia-ventas">
+  <h2>IA y Ventas para Emprendedores</h2>
+  <p>Vendé con inteligencia: usá la Inteligencia Artificial para ahorrar tiempo, destacar tu propuesta y cerrar más ventas de manera efectiva.</p>
+  <ul>
+    <li>Crear propuestas de venta impactantes con IA.</li>
+    <li>Automatizar tareas repetitivas y ganar tiempo.</li>
+    <li>Diferenciarte de la competencia usando herramientas inteligentes.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-ventas-proposito">
+  <h2>Ventas con Propósito</h2>
+  <p>¡No envíes solo un presupuesto: VENDE! Aprendé a conectar con tus clientes y transmitir el valor real de tu propuesta.</p>
+  <ul>
+    <li>Identificar oportunidades de venta efectivas.</li>
+    <li>Usar el lenguaje correcto para generar confianza.</li>
+    <li>Cerrar ventas sin presión, desde la autenticidad.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-oratoria">
+  <h2>Oratoria y Persuasión</h2>
+  <p>Aprendé a hablar para vender con claridad, confianza y autenticidad, potenciando tu mensaje y tu impacto.</p>
+  <ul>
+    <li>Preparar presentaciones que enganchen a tus clientes.</li>
+    <li>Comunicar con seguridad y persuasión.</li>
+    <li>Convertir conversaciones en oportunidades de venta.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-storytelling">
+  <h2>Storytelling</h2>
+  <p>Aprendé a contar la historia de tu negocio y conectar con tus clientes de manera memorable.</p>
+  <ul>
+    <li>Construir la narrativa de tu marca.</li>
+    <li>Usar historias para vender sin presión.</li>
+    <li>Enganchar emocionalmente a tu audiencia.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-buenos-modales">
+  <h2>Buenos Modales</h2>
+  <p>Aprendé etiqueta y comunicación efectiva para captar y retener clientes con profesionalismo y cordialidad.</p>
+  <ul>
+    <li>Comunicación clara y respetuosa.</li>
+    <li>Manejo de situaciones difíciles con clientes.</li>
+    <li>Generar confianza y fidelización.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-canva">
+  <h2>Canva</h2>
+  <p>Diseño para presentaciones y publicaciones en redes de manera simple y efectiva.</p>
+  <ul>
+    <li>Crear contenido visual atractivo.</li>
+    <li>Optimizar publicaciones para redes sociales.</li>
+    <li>Diseños profesionales sin necesidad de experiencia previa.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-plan-negocio">
+  <h2>Plan de Negocio Esencial</h2>
+  <p>Ordená tus cuentas, proyectá metas y hacé que tu negocio funcione de manera efectiva y organizada.</p>
+  <ul>
+    <li>Clarificar objetivos y metas.</li>
+    <li>Organizar recursos y finanzas.</li>
+    <li>Implementar un plan accionable y realista.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-ia-vida">
+  <h2>IA a tu Favor para tu Vida Diaria</h2>
+  <p>Simplificá tu vida personal y laboral usando herramientas de inteligencia artificial de manera práctica.</p>
+  <ul>
+    <li>Automatizar tareas personales y profesionales.</li>
+    <li>Organizar agenda y proyectos.</li>
+    <li>Optimizar tiempo y productividad.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-nanobanana">
+  <h2>Edición de Fotografías Nanobanana</h2>
+  <p>Aprendé técnicas de edición de imágenes para mejorar tus contenidos visuales y crear publicaciones impactantes.</p>
+  <ul>
+    <li>Edición básica y avanzada de fotos.</li>
+    <li>Optimización de imágenes para redes y marketing.</li>
+    <li>Estilo visual coherente con tu marca.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<!-- Scroll suave -->
+<script>
+  const botones = document.querySelectorAll('.btn');
+  botones.forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = btn.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+<!-- Capacitaciones Corporativas -->
+<section id="capacitaciones-corporativas">
+  <style>
+    #capacitaciones-corporativas {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fdf6f0;
+    }
+
+    #capacitaciones-corporativas h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--color-texto);
+    }
+
+    .cap-texto {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--color-gris);
+      text-align: left;
+    }
+
+    .cap-texto ul {
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    .cap-texto li {
+      margin-bottom: 8px;
+    }
+
+    .btn-capacitacion {
+      display: inline-block;
+      background-color: var(--color-acento);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-capacitacion:hover {
+      background-color: #b68d2d; /* dorado más oscuro */
+    }
+  </style>
+
+  <!-- Capacitaciones Corporativas -->
+<section id="capacitaciones-corporativas">
+  <h2>✨ Capacitaciones Corporativas</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Ventas con Propósito</h3>
+      <p>Aprender a vender sin presionar, generando confianza y conexión real con los clientes.</p>
+      <a href="#curso-ventas-proposito-corp" class="btn">Quiero capacitar a mi equipo</a>
+    </div>
+    <div class="card">
+      <h3>Laboratorio de Persuasión</h3>
+      <p>Talleres prácticos para mejorar la comunicación y el impacto de tus propuestas.</p>
+      <a href="#curso-laboratorio-corp" class="btn">Quiero capacitar a mi equipo</a>
+    </div>
+    <div class="card">
+      <h3>Coaching para Equipos de Trabajo</h3>
+      <p>Fortalecé la mentalidad, colaboración y liderazgo dentro de tu equipo.</p>
+      <a href="#curso-coaching-corp" class="btn">Quiero capacitar a mi equipo</a>
+    </div>
+    <div class="card">
+      <h3>Atención al Cliente con IA</h3>
+      <p>Estrategias modernas y efectivas para fidelizar y sorprender a tus clientes usando inteligencia artificial.</p>
+      <a href="#curso-atencion-corp" class="btn">Quiero capacitar a mi equipo</a>
+    </div>
+  </div>
+</section>
+
+<!-- Estilo para viñetas con check dorado centrado -->
+<style>
+  section ul {
+    list-style: none;           /* Quita las viñetas tradicionales */
+    padding-left: 0;            /* Elimina sangría */
+    text-align: center;         /* Centra los ítems */
+  }
+
+  section ul li {
+    position: relative;
+    margin: 1em 0;              /* Espacio entre ítems */
+    padding-left: 0;            
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  /* Check dorado centrado */
+  section ul li::before {
+    content: "✔";               /* Icono check */
+    color: #d4af37;             /* Color dorado */
+    display: block;
+    font-size: 1.2rem;
+    margin: 0 auto 0.3em auto;  /* Centra el icono y separa del texto */
+  }
+</style>
+
+<section id="curso-ventas-proposito-corp">
+  <h2>Ventas con Propósito</h2>
+  <p>Aprender a vender sin presionar, generando confianza y conexión real con los clientes. Incluye el uso de herramientas de Inteligencia Artificial para optimizar propuestas y seguimiento.</p>
+  <ul>
+    <li>Identificar oportunidades de venta efectivas.</li>
+    <li>Usar el lenguaje correcto para generar confianza.</li>
+    <li>Cerrar ventas desde la autenticidad y la conexión.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-laboratorio-corp">
+  <h2>Laboratorio de Persuasión</h2>
+  <p>Talleres prácticos para mejorar la comunicación y el impacto de tus propuestas dentro de tu equipo y con tus clientes.</p>
+  <ul>
+    <li>Comunicación persuasiva y efectiva.</li>
+    <li>Presentaciones que generan interés y confianza.</li>
+    <li>Simulación de situaciones reales para practicar habilidades.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-coaching-corp">
+  <h2>Coaching para Equipos de Trabajo</h2>
+  <p>Fortalecé la mentalidad, colaboración y liderazgo dentro de tu equipo para alcanzar resultados sobresalientes.</p>
+  <ul>
+    <li>Mejorar la coordinación y productividad del equipo.</li>
+    <li>Fortalecer liderazgo y motivación.</li>
+    <li>Resolver conflictos y potenciar el trabajo colaborativo.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+<section id="curso-atencion-corp">
+  <h2>Atención al Cliente con Inteligencia Artificial</h2>
+  <p>Estrategias modernas y efectivas para fidelizar y sorprender a tus clientes usando IA como herramienta de apoyo.</p>
+  <ul>
+    <li>Automatizar respuestas y seguimiento con IA.</li>
+    <li>Personalizar la atención para cada cliente.</li>
+    <li>Generar experiencias memorables y fidelización.</li>
+  </ul>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar curso</a>
+</section>
+
+
+<!-- Testimonios -->
+<section id="testimonios">
+  <h2>Testimonios</h2>
+  <p>"Las mentorías con Fernanda me ayudaron a ordenar mi negocio y cerrar más ventas. ¡La recomiendo 100%!" – Cliente satisfecho</p>
+  <p>"Gracias a sus capacitaciones, mi equipo de ventas logró mejorar la atención al cliente y aumentar los ingresos." – Dueño de Py
+
 
   <!-- Contacto -->
   <section id="contacto">
