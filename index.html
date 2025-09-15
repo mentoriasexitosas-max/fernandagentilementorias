@@ -715,6 +715,36 @@
   <footer>
     <p>© 2025 Mentorías Exitosas - Fernanda Gentile | Todos los derechos reservados</p>
   </footer>
+<!-- Botón volver arriba -->
+<a href="#" class="btn-volver-arriba">↑</a>
+
+<style>
+/* Estilo del botón */
+.btn-volver-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d4af37; /* dorado elegante */
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+.btn-volver-arriba:hover {
+  background-color: #b88b2f; /* dorado más oscuro */
+  transform: translateY(-3px);
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+</style>
 
 </body>
 </html>
