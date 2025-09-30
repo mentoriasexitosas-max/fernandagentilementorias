@@ -143,16 +143,21 @@
       font-size: 0.9rem;
     }
 
-    .social a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: var(--color-gris);
-      transition: color 0.3s ease;
-    }
+ .social a {
+  font-size: 1.2rem;  /* tamaño del texto */
+  display: inline-flex;
+  align-items: center;
+  margin: 8px 0;
+  text-decoration: none;
+  color: var(--color-texto);
+}
 
-    .social a:hover {
-      color: var(--color-acento);
-    }
+.social a i {
+  font-size: 1.6rem;  /* tamaño de los íconos */
+  margin-right: 8px;
+  color: var(--color-acento);
+}
+
 
     /* Sobre mí: foto y texto alineados */
     #sobremi {
@@ -240,6 +245,8 @@
       <a href="#mentoria1a1">Mentorías 1:1</a>
       <a href="#testimonios">Testimonios</a>
       <a href="#contacto">Contacto</a>
+      <a href="#ebooks">E-books</a></li>
+
     </nav>
   </header>
 
@@ -702,13 +709,28 @@ Lucia Martínez. LULE_HECHOCONAMOR.
 
   <!-- Contacto -->
   <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Querés llevar tu negocio al siguiente nivel? ¡Hablemos por WhatsApp!</p>
-    <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Quiero mi mentoría</a>
-    <p>También podés encontrarme en redes sociales:</p>
-    <div class="social">
-      <a href="https://www.instagram.com/fernandagentilementorias" target="_blank"><i class="fab fa-instagram"></i> @fernandagentilementorias</a>
-      <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  <h2>Contacto</h2>
+  <p>¿Querés llevar tu negocio al siguiente nivel? ¡Hablemos!</p>
+  <a href="https://wa.me/5491150135425" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
+  
+  <p>📧 Correo: <a href="mailto:mentoriasexitosas@gmail.com">mentoriasexitosas@gmail.com</a></p>
+  
+  <p>También podés encontrarme en redes sociales:</p>
+  <div class="social">
+  <a href="https://www.instagram.com/fernandagentilementorias" target="_blank">
+    <i class="fab fa-instagram"></i> @fernandagentilementorias
+  </a>
+  <br>
+   <a href="https://www.linkedin.com/in/fernandagentile-mentorias" target="_blank">
+      <i class="fab fa-linkedin"></i> fernandagentile-mentorias
+    </a>
+  </div>
+</section>
+
+</section>
+
+</a>
+
     </div>
   </section>
 
@@ -744,6 +766,40 @@ Lucia Martínez. LULE_HECHOCONAMOR.
 /* Scroll suave */
 html {
   scroll-behavior: smooth;
+}
+</style>
+
+<!-- Sección E-books -->
+<section id="ebooks" style="padding:60px 20px; text-align:center; background:#fdfdfd;">
+  <h2 style="font-size:2em; color:#222; margin-bottom:20px;">📘 Mis E-books y Novedades</h2>
+  <p style="font-size:1.1em; color:#555; max-width:700px; margin:0 auto 30px;">
+    Aquí encontrarás mis guías gratuitas y cuadernos de trabajo para potenciar tus ventas, tu mentalidad emprendedora y tu organización. 
+    Empezá descargando gratis mi primer e-book 👇
+  </p>
+
+  <a href="https://wa.me/5491150135425?text=Hola+Fer,+quiero+el+e-book+gratis" class="boton-ebook" target="_blank">
+  📘 Quiero mi E-BOOK Gratis
+</a>
+
+  </a>
+</section>
+
+<!-- Estilos del botón -->
+<style>
+.boton-ebook {
+  display:inline-block;
+  background-color:#d4af37; /* dorado */
+  color:white;
+  padding:15px 30px;
+  border-radius:30px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 4px 6px rgba(0,0,0,0.2);
+  transition:0.3s ease;
+}
+.boton-ebook:hover {
+  background-color:#b8962e;
 }
 </style>
 
