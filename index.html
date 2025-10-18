@@ -229,72 +229,92 @@
         margin: 10px 0;
       }
     }
-/* ===== HEADER RESPONSIVE ===== */
-.site-header{
-  position: sticky;
+<style>
+/* ===== ENCABEZADO MENTORÍAS EXITOSAS ===== */
+.site-header {
+  position: sticky;             /* se queda fijo arriba al hacer scroll */
   top: 0;
   z-index: 9999;
-  background: background: #EED7CE; /* rosa nude elegante */
-;
-  border-bottom: 1px solid #E6B7A8;
+  background: #EED7CE;          /* rosa nude elegante */
+  border-bottom: 1px solid #D4A65A; /* línea dorada */
+  padding: 12px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-.site-header nav{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 12px 16px;
+/* ===== TÍTULOS Y SUBTÍTULOS ===== */
+.site-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #1F1F1F;
+  font-size: 40px;
+  margin: 8px 0 4px 0;
 }
 
-.site-header nav ul{
-  list-style: none;
+.site-header p {
+  font-family: 'Montserrat', sans-serif;
+  color: #3E3E3E;
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  justify-content: center;
+  font-size: 16px;
 }
 
-.site-header nav a{
+/* ===== MENÚ HORIZONTAL ===== */
+.site-header nav ul {
+  list-style: none;          /* elimina las viñetas */
+  padding: 0;
+  margin: 14px 0 8px 0;
+  display: flex;             /* pone los botones en fila */
+  flex-wrap: wrap;           /* si no entran, bajan a segunda línea */
+  justify-content: center;   /* centrado horizontal */
+  gap: 22px;                 /* espacio entre botones */
+}
+
+.site-header nav li {
+  list-style: none;
+}
+
+.site-header nav a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  text-decoration: none;
   color: #1F1F1F;
+  text-decoration: none;
   padding: 6px 10px;
-  border-radius: 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-/* Móvil */
-@media (max-width: 768px){
-  .site-header nav ul{
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-  }
-  .site-header nav a{
-    display: block;
-    background: #FFFFFF;
-    padding: 12px 14px;
-    border: 1px solid #E6B7A8;
-    border-radius: 12px;
-    text-align: center;
-  }
+.site-header nav a:hover {
+  color: #D4A65A; /* dorado al pasar el mouse */
 }
 
-  </style>
+/* ===== AJUSTES PARA CELULAR ===== */
+@media (max-width: 768px) {
+  .site-header h1 {
+    font-size: 32px;
+  }
+
+  .site-header p {
+    font-size: 14px;
+  }
+
+  .site-header nav ul {
+    flex-wrap: wrap;       /* mantiene horizontal, baja si no entra */
+    gap: 14px;
+  }
+
+  .site-header nav a {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+</style>
+
 </head>
 <body>
 
  <header class="site-header">
-  <h1 style="font-family:'Playfair Display', serif; color:#1F1F1F; margin:15px 0 5px 0;">
-    Mentorías Exitosas
-  </h1>
-  <p style="font-family:'Montserrat', sans-serif; color:#3E3E3E; margin:0;">
-    Fernanda Gentile · Consultora & Formadora
-  </p>
-  <p style="font-family:'Montserrat', sans-serif; color:#3E3E3E; margin-bottom:15px;">
-    Cursos · Mentorías · Diarios & Recursos Digitales
-  </p>
+  <h1>Mentorías Exitosas</h1>
+  <p>Fernanda Gentile · Consultora & Formadora</p>
+  <p>Cursos · Mentorías · Diarios & Recursos Digitales</p>
 
   <nav>
     <ul>
@@ -308,7 +328,6 @@
     </ul>
   </nav>
 </header>
-
 
 
 <!-- Inicio -->
